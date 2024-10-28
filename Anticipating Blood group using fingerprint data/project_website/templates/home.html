@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="home">
+<div class="home-content">
+<h1 class="home_heading">Blood Group Prediction</h1>
+<p class="home_text">Welcome to our Blood Group Prediction project. This project helps you predict your blood group, check transfusion compatibility, and get nutritional recommendations based on your blood group.</p>
+
+<div class="home-buttons">
+    <form action="{{ url_for('upload_image') }}" method="get">
+        <button type="submit" class="buttons">Blood Group Prediction</button>
+    </form>
+    <form action="{{ url_for('about') }}" method="get">
+        <button type="submit" class="buttons">About Project</button>
+    </form>
+</div>
+</div>
+<div class="blood_image"></div>
+
+</div>
+{% endblock %}

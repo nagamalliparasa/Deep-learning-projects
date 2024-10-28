@@ -1,0 +1,680 @@
+*{
+/*     
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.05cm; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/back.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #eddbdbd1;
+}
+
+nav {
+    background-color: #201b25bd;
+    color: white;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+    padding: 5px 20px;
+}
+
+nav ul li:hover{
+    transform: scale(1.10);
+    
+}
+nav ul li a {
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(137, 129, 118);
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+
+    color:#f6dede68;
+}
+.blood_image{
+    /* padding-left:%; */
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 100%;
+    background-image: url('../images/blood.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+
+}
+
+.home_heading{
+    padding: 15% 0 0 5%;
+    color: antiquewhite;
+    font-size: 100px;
+}
+
+.home_text{
+    margin-top: 40px;
+    padding:0 5%;
+    width:90%;
+}
+.content {
+    padding: 15px 0;
+    height: 520px;
+}
+
+.home-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.home-buttons button{
+    padding: 10px;
+    width: 250px;
+    font-size: 20px;
+    color:darkcyan;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.home-buttons button:hover{
+    transform: scale(1.05);
+    color: cadetblue;
+}
+
+/* services.html css */
+
+.service {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.service_item {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background-color: #509bc6;
+    text-align: center;
+}
+
+.service_item:hover {
+    transform: scale(1.05);
+}
+
+.service_heading {
+    height: 100px;
+    font-size: 1.5rem;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.service_button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f4f4f4;
+    color: rgb(70, 12, 12);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.service_item p{
+    height: 130px;
+    overflow: hidden;
+    /* border: 1px solid gray; */
+    margin-bottom: 25px;
+}
+.service_button:hover {
+    background-color: #4288d3b5;
+}
+
+@media (max-width: 768px) {
+    .service_list {
+        flex-direction: column;
+    }
+
+    .service_item {
+        margin: 1rem 0;
+    }
+}
+
+
+/* Prediction css */
+
+.predict{
+    text-align: center;
+    color:cadetblue;
+    height: 100px;
+    font-size: 30px;
+}
+h1, h2 {
+    color: #333333;
+}
+
+.predict_heading{
+    color:cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-container {
+    margin: 0% 25%;
+    height: 300px;
+    background-color: #ccccccbe;
+    border-radius: 10px;
+    padding-top:20px;
+}   
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:linen;
+    /* color: #333; */
+    padding: 20px;
+}
+
+.form-input {
+    display: block;
+    margin: 0% 25%;
+    width: 45%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* border: 1px solid #18030376; */
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-color: beige;
+}
+
+.form-button {
+    background-color: #175a21;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.form-button:hover {
+    background-color: #439b43c2;
+}
+
+.flashes{
+    font-size: 16px;
+    color:blanchedalmond;
+}
+
+
+/* prediction.html css */
+.prediction{
+    margin: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.prediction_heading{
+    text-align: center;
+    color: beige;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    
+}
+
+.uploaded-image-prediction{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    padding: 0% 5%;
+}
+
+.image-container-prediction{
+    text-align: center;
+
+}
+
+.image-container-prediction p{
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.buttons-prediction{
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    height: 50px;
+    width: 100%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    /* background-color: brown; */
+}
+
+.transfusion_button_prediction{
+    margin-right: 10%;
+    
+}
+
+
+.back-prediction{
+    text-align: center;
+    height: 50px;
+    
+    
+    align-items: center;
+    vertical-align: center;
+}
+
+.back-prediction button{
+    font-size: 16px;
+    width: 80%;
+    color:steelblue;
+}
+
+/* transfusion compatiblity */
+
+.transfusion{
+    width: 80%;
+    padding: 0 10%;
+}
+
+.transfusion-heading{
+    text-align: center;
+    color: beige;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.transfusion-parts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.partition{
+    border-radius: 20px;
+    background-color:rgb(190, 235, 250);
+    color:#333;
+    width: 100%;
+    height: 250px;
+    /* text-align: center; */
+}
+
+#donor-section{
+    margin-right: 30px ;
+}
+.partition h2{
+    text-align: center;
+    color:darkslategrey;
+}
+
+.transfusion-label{
+    /* border: 1px solid blue; */
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 3%;
+    font-size: 20px;
+}
+
+
+.transfusion input{
+    height: 20px;
+    
+}
+
+.transfusion .image{
+    height: 25px;
+    font-size: 17px;
+    
+}
+
+.transfusion .submit{
+    height: 30px;
+    margin: 30px 40%;
+    /* width:0%; */
+    font-size:20px ;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(30, 30, 161, 0.834);
+}
+
+
+.transfusion .submit:hover{
+    background-color: cadetblue;
+    transform: scale(1.05);
+}
+
+.check-compatibility button{
+    height: 30px;
+    font-size: 20px;
+    margin: 0% 32%;
+    border-radius: 10px;
+    color: cadetblue;
+    border: 1px solid white;
+}
+
+.check-compatibility button:hover{
+    background-color:antiquewhite;
+    transform: scale(1.05);
+}
+
+.partition p{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 3%;
+    font-size: 20px;
+}
+
+.partition .submit-back{
+    height: 30px;
+    margin: 30px 30%;
+    /* width:0%; */
+    font-size:20px ;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(53, 53, 215, 0.742);
+}
+
+
+.partition .submit-back:hover{
+    background-color: cadetblue;
+    transform: scale(1.05);
+}
+
+/* .check-compatibility */
+.compatible{
+    height: 400px;
+    margin: 4% 30%;
+    width: 40%;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:rgb(190, 235, 250);
+    color: black;
+}
+
+.compatible h1{
+    color: cadetblue;
+    text-align: center;
+    padding: 5%;
+
+}
+
+.not_compatible{
+    height: 150px;
+    margin: 4% 30%;
+    width: 40%;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:rgb(190, 235, 250);
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    padding-top:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.compatible h2{
+    font-size: 15px;
+    padding-left: 2%;
+    text-decoration: underline;
+}
+
+.compatible p{
+    height: 100px;
+    padding: 15px 30px;
+    width: 90%;
+    text-indent: 0%;
+    color: rgba(0, 0, 0, 0.711);
+}
+
+
+.nutrition-partition{
+    margin: 50px 23%;
+    width: 50%;
+    margin-right: 50%;
+}
+
+.nutrition-partition p{
+    padding-top: 10%;
+    padding-left: 30%;
+}
+
+
+.nutrition-submit{
+    height: 40px;
+}
+
+.nutrition-label{
+    padding-top:10px;
+}
+
+
+.recommendation-button{
+    margin: 10px 38%;
+    height: 50px;
+}
+.recommendation-button button{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: cadetblue;
+    background-color:aliceblue;
+}
+
+
+
+.n_recommend{
+    height: relative;
+    margin: 20px 30%;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: #509bc6;
+    border-radius: 20px;
+}
+
+.n_recommend h2{
+    color:blanchedalmond;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.n_recommend button{
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin:15px 40%;
+    color: cadetblue;
+}
+
+.n_recommend button:hover{
+    background-color:antiquewhite;
+    transform: scale(1.05);
+}
+
+.n_recommend .ch{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: #f4f4f4;
+}
+
+.n_recommend ul li{
+    padding: 5px;
+}
+
+.about_project{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.webp');
+    height: 1500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #eddbdbd1;
+}
+
+.about_project h1{
+    text-align: center;
+    height: 70px;
+    color: bisque;
+    font-size: 50px;
+}
+
+.about_project h2{
+    font-size: 25px;
+    padding:2%;
+    color:lightblue ;
+}
+
+.about_project p{
+    padding-left: 5%;
+    padding-right: 30%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+.about_project li{
+    padding-right: 30%;
+    padding-left: 2%;
+    list-style: None;
+    text-align: justify;
+}
+
+
+.about{
+    margin: 0;
+    padding: 1px;
+    background-image: url('../images/background.webp');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #eddbdbd1;
+}
+.about-us-heading{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8% 5%;
+    
+}
+
+.developer{
+    border: 2px solid white;
+    padding: 2%;
+    background-color:darkcyan;
+    border-radius: 20px;
+    height: 400px;
+    width: 250px;
+    text-overflow: hidden;
+}
+
+
+
+.developer :hover{
+    transform: scale(1.05);
+
+}
+
+.developer div{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/boys.jpg');
+    height: 250px;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.developer-girl div{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/girl2.png');
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.developer .name{
+    font-size: 23px;
+    text-align: center;
+    color: floralwhite;
+
+}
+
+.developer .idnum{
+    font-size: 18px;
+    text-align: center;
+    color: rgba(254, 239, 209, 0.497);
+}
+
+.developer .role{
+    font-size: 18px;
+    text-align: center;
+    color: rgba(254, 239, 209, 0.497);
+}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %} Transfusion{% endblock %}
+{% block content %}
+    <div class="transfusion">
+        <h1 class="transfusion-heading">Blood Transfusion Compatibility</h1>
+        <div class="transfusion-parts">
+        <div class="partition" id="donor-section">
+            <h2>Blood Donor</h2>
+            {% if donor_blood_group %}
+                <p>Blood Group: {{ donor_blood_group }}</p>
+                <form action="{{ url_for('reset_donor') }}" method="post">
+                    <button type="submit" class="submit-back">Change Input</button>
+                </form>
+            
+            {% else %}
+                <form action="{{ url_for('handle_donor') }}" method="post" enctype="multipart/form-data">
+                    <label for="donor_blood_group" class="transfusion-label">Enter Blood Group:</label>
+                    <input type="text" id="donor_blood_group" name="donor_blood_group"><br>
+                    <p style="text-align:center">Or <br></p>
+                    <label for="donor_fingerprint" class="transfusion-label">Upload Fingerprint:</label>
+                    <input type="file" id="donor_fingerprint" name="donor_fingerprint" accept="image/*" class="image"><br>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+            {% endif %}
+        </div>
+
+        <div class="partition" id="recipient-section">
+            <h2>Blood Recipient</h2>
+            {% if recipient_blood_group %}
+                <p>Blood Group: {{ recipient_blood_group }}</p>
+                <form action="{{ url_for('reset_recipient') }}" method="post">
+                    <button type="submit" class="submit-back">Change Input</button>
+                </form>
+            {% else %}
+                <form action="{{ url_for('handle_recipient') }}" method="post" enctype="multipart/form-data">
+                    <label for="recipient_blood_group" class="transfusion-label">Enter Blood Group:</label>
+                    <input type="text" id="recipient_blood_group" name="recipient_blood_group"><br>
+                    <p style="text-align:center">Or <br></p>
+
+                    <label for="recipient_fingerprint" class="transfusion-label">Upload Fingerprint:</label>
+                    <input type="file" id="recipient_fingerprint" name="recipient_fingerprint" accept="image/*" class="image"><br>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+            {% endif %}
+        </div>
+    </div>
+    
+
+    <div class="check-compatibility">
+        <form action="{{ url_for('check_compatibility') }}" method="post">
+            <button type="submit">Check Blood Transfusion Compatibility</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

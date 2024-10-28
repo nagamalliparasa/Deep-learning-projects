@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="about_project">
+<h1>About the Project</h1>
+<h2>Abstract</h2>
+<p>This study highlights the uniqueness of fingerprints in identifying individuals, which
+    remains unchanged throughout life. Fingerprint evidence is highly valued in legal contexts due to
+    its distinctiveness, with a low likelihood of resemblance even among identical twins. At the same
+    time, knowing blood is also a crucial to everyone while they are donating blood to others or else
+    to take treatment. Currently, the manual tests conducted by lab phlebotomist in laboratories can be
+    time-consuming and prone to human error, which can have severe consequences, particularly in
+    urgent situations or blood donations. To address these challenges, we propose a non- invasive
+    method of finding blood group which uses convolutional neural network (CNN). The CNN
+    architecture, LeNet is used, which is a pre-trained model. During this project we committed to
+    extract some features from the data, and with the help of that data, a model LeNet will be trained
+    to predict blood group without taking blood sample (Non-Invasive method).
+    Keywords: Blood group determination, fingerprint pattern, ridge frequency, LeNet,
+    Convolutional neural networks</p>
+<h2>Introduction</h2>
+<p>The mostly used fingerprint application is identification of individuals using fingerprint
+    patterns. Most of the organizations in India follows, fingerprint based biometric
+    identification and also the gender and age identification is also considerable modality of
+    the application. There are four sorts of fingerprints plans found in fingers are Loops,
+    Whorls, Arches, and Mixed or Composites. The important characteristic feature fingerprint
+    image may contain such as line connecting the features in different regions of image.
+    Detecting blood groups using fingerprints is an innovative and non-invasive approach that
+    combines biometric technology with medical information. This method leverages the
+    unique patterns found in an individual's fingerprint to determine their blood type, which is
+    an important piece of medical information for healthcare professionals</p>
+<h2>Advantages</h2>
+<p>This system offers several advantages. It helps rural populations by
+    determining their blood group with minimal medical resources and without the need for trained
+    experts, benefiting those who fear needles. It also aids blood donation camps by efficiently
+    identifying blood groups. Additionally, our system provides blood transfusion compatibility
+    services and personalized nutrition recommendations based on blood group, enhancing its practical
+    utility and impact.</p>
+<h2>Limitations</h2>
+<ul>
+    <li> <h3> Accuracy Concerns: </h3> The method may not achieve the same level of accuracy as traditional
+blood tests, potentially leading to misclassification of blood groups. </li>
+    <li> <h3>Data Variability: </h3> Fingerprint patterns can vary significantly among individuals, and
+establishing a consistent correlation with blood groups might be challenging task. </li>
+    <li> <h3>Technical Challenges:</h3> Developing a robust machine learning model requires extensive and
+high-quality data, which can be difficult to collect and process.</li>
+    <li> <h3>Cost and Accessibility of Technology:</h3> While the method aims to eliminate specialized
+equipment, the initial development and deployment of the technology might be costly and require
+advanced infrastructure. </li>
+</ul>
+
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Services{% endblock %}
+{% block content %}
+<h1 class="service">Our Services</h1>
+<ul class="service_list">
+    <li class="service_item">
+        <div class="service_heading">Blood Group Prediction</div>
+        <p>One of the major services of building this webpage is to let everyone predict their blood group through their fingerprint map. Knowing your blood group is primary, and in this proposed system, we predict your blood group using a fingerprint map. By giving your image to the trained model, you will get a predicted blood type.</p>
+        <a href="{{ url_for('upload_image') }}" class="service_button">Learn More</a>
+    </li>
+    <li class="service_item">
+        <div class="service_heading">Blood Transfusion Compatibility</div>
+        <p>Blood transfusion compatibility is a service we provide to check the compatibility of blood before transfusing from one person to another.</p>
+        <a href="{{ url_for('transfusion') }}" class="service_button">Learn More</a>
+    </li>
+    <li class="service_item">
+        <div class="service_heading">Nutritional Recommendation</div>
+        <p>Based on blood group, people need to take specific nutrition to prevent diseases in the future.</p>
+        <a href="{{ url_for('nutrition') }}" class="service_button">Learn More</a>
+    </li>
+    <li class="service_item">
+        <div class="service_heading">About Project Components</div>
+        <p>If anyone is interested in seeing the project, we provide some details regarding the project here.</p>
+        <a href="{{ url_for('about') }}" class="service_button">Learn More</a>
+    </li>
+</ul>
+{% endblock %}

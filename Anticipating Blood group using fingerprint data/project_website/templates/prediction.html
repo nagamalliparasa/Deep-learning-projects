@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Prediction{% endblock %}
+{% block content %}
+<div class="prediction">
+    <h1 class="prediction_heading">Prediction Result</h1>
+    <div id="image-container" class="image-container-prediction">
+        <img id="uploaded-image" src="{{ image_url }}" alt="Uploaded Image" class="uploaded-image-prediction">
+        <p id="predicted-output" class="predicted-output-prediction"><b>{{ blood_group }}</b></p>
+    </div>
+    <div class="buttons-prediction">
+        <div class="home-buttons">
+            <form action="{{ url_for('predict_transfusion') }}" method="get">
+                <input type="hidden" name="blood_group" value="{{ blood_group }}">
+                <button type="submit" class="transfusion_button_prediction">Blood Transfusion Compatibility</button>
+            </form>
+            <form action="{{ url_for('predict_nutrition') }}" method="get">
+                <input type="hidden" name="blood_group" value="{{ blood_group }}">
+
+                <button type="submit">Nutrition Recommendation</button>
+            </form>
+        </div>
+     </div>
+
+
+<div class="back-prediction home-buttons">
+    <form action="{{ url_for('predict') }}" method="get">
+        <button type="submit">Go back to Predict</button>
+    </form>
+</div>
+
+</div>
+{% endblock %}
