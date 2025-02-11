@@ -1,1 +1,0 @@
-<!-- Anticipating blood group using fingerprint map in non-invasive method -->      
